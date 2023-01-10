@@ -1,13 +1,13 @@
 import {NativeModules, Platform} from 'react-native';
 
 const LINKING_ERROR =
-  `The package '@haqq/provider-base' doesn't seem to be linked. Make sure: \n\n` +
+  `The package '@haqq/encryption-react-native' doesn't seem to be linked. Make sure: \n\n` +
   Platform.select({ios: '- You have run \'pod install\'\n', default: ''}) +
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
 
-const HaqqProviderBase = NativeModules.HaqqProviderBase
-  ? NativeModules.HaqqProviderBase
+const HaqqEncryptionRN = NativeModules.HaqqEncryptionRN
+  ? NativeModules.HaqqEncryptionRN
   : new Proxy(
     {},
     {
@@ -28,7 +28,7 @@ export async function encrypt<T extends object>(
   password: string,
   object: T,
 ): Promise<string> {
-  return HaqqProviderBase.encrypt(password, JSON.stringify(object));
+  return HaqqEncryptionRN.encrypt(password, JSON.stringify(object));
 }
 
 /**
@@ -40,7 +40,7 @@ export async function encrypt<T extends object>(
  * @returns - Promise resolving to decrypted data object
  */
 export async function decrypt<T extends object>(password: string, encryptedString: string): Promise<T> {
-  return HaqqProviderBase.decrypt(password, encryptedString).then(
+  return HaqqEncryptionRN.decrypt(password, encryptedString).then(
     (resp: string) => JSON.parse(resp),
   );
 }
