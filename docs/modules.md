@@ -1,6 +1,6 @@
-[@haqq/encryption-react-native - v0.0.1](README.md) / Exports
+[@haqq/encryption-react-native - v0.0.2](README.md) / Exports
 
-# @haqq/encryption-react-native - v0.0.1
+# @haqq/encryption-react-native - v0.0.2
 
 ## Table of contents
 
@@ -39,7 +39,7 @@ using a password (and AES decryption with native libraries)
 
 #### Defined in
 
-[native-modules.ts:42](https://github.com/haqq-network/haqq-wallet-encryption-react-native/blob/3468305/src/native-modules.ts#L42)
+[native-modules.ts:42](https://github.com/haqq-network/haqq-wallet-encryption-react-native/blob/728b0a1/src/native-modules.ts#L42)
 
 ___
 
@@ -70,4 +70,4 @@ Encrypts a JS object using a password (and AES encryption with native libraries)
 
 #### Defined in
 
-[native-modules.ts:27](https://github.com/haqq-network/haqq-wallet-encryption-react-native/blob/3468305/src/native-modules.ts#L27)
+[native-modules.ts:27](https://github.com/haqq-network/haqq-wallet-encryption-react-native/blob/728b0a1/src/native-modules.ts#L27)
