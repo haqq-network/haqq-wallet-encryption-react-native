@@ -1,6 +1,6 @@
 {
   "name": "@haqq/encryption-react-native",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
@@ -25,12 +25,17 @@
     "prettier:format": "prettier --write \"src/**/*.ts\"",
     "typedoc": "typedoc"
   },
-  "dependencies": {},
+  "dependencies": {
+    "base-64": "^1.0.0",
+    "polyfill-crypto.getrandomvalues": "^1.0.0",
+    "react-native-aes-crypto": "2.1.0"
+  },
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
   },
   "devDependencies": {
+    "@types/base-64": "^1.0.0",
     "@types/jest": "^29.4.0",
     "@types/node": "^18.14.1",
     "@types/react-native": "^0.70.8",
