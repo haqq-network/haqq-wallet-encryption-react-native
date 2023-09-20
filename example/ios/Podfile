@@ -43,8 +43,6 @@ target 'example' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  pod 'secp256k1Wrapper', :modular_headers => true
-
   target 'exampleTests' do
     inherit! :complete
     # Pods for testing

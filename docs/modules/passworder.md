@@ -1,17 +1,13 @@
-[@haqq/encryption-react-native - v0.0.4](README.md) / Exports
+[@haqq/encryption-react-native - v0.0.4](../README.md) / [Exports](../modules.md) / passworder
 
-# @haqq/encryption-react-native - v0.0.4
+# Namespace: passworder
 
 ## Table of contents
 
-### Namespaces
-
-- [passworder](modules/passworder.md)
-
 ### Functions
 
-- [decrypt](modules.md#decrypt)
-- [encrypt](modules.md#encrypt)
+- [decrypt](passworder.md#decrypt)
+- [encrypt](passworder.md#encrypt)
 
 ## Functions
 
@@ -43,7 +39,7 @@ using a password (and AES decryption with native libraries)
 
 #### Defined in
 
-[native-modules.ts:42](https://github.com/haqq-network/haqq-wallet-encryption-react-native/blob/1082177/src/native-modules.ts#L42)
+[passworder.ts:69](https://github.com/haqq-network/haqq-wallet-encryption-react-native/blob/1082177/src/passworder.ts#L69)
 
 ___
 
@@ -74,4 +70,4 @@ Encrypts a JS object using a password (and AES encryption with native libraries)
 
 #### Defined in
 
-[native-modules.ts:27](https://github.com/haqq-network/haqq-wallet-encryption-react-native/blob/1082177/src/native-modules.ts#L27)
+[passworder.ts:50](https://github.com/haqq-network/haqq-wallet-encryption-react-native/blob/1082177/src/passworder.ts#L50)

@@ -20,7 +20,7 @@ function _generateSalt(byteCount = 32) {
 }
 
 const _keyFromPassword = (password: string, salt: string): Promise<string> => {
-  return Aes.pbkdf2(password, salt, 5000, 256);
+  return Aes.pbkdf2(password, salt, 5000, 256, 'sha512');
 };
 const _encryptWithKey = async (text: string, keyBase64: string) => {
   try {

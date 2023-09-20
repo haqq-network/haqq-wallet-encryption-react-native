@@ -9,13 +9,13 @@ import React, {useCallback, useState} from 'react';
 import {
   Alert,
   Button,
-  Clipboard,
   SafeAreaView,
   ScrollView,
   StyleSheet,
   Text,
   TextInput,
 } from 'react-native';
+import Clipboard from '@react-native-clipboard/clipboard';
 import {decrypt, encrypt, passworder} from '@haqq/encryption-react-native';
 
 function App(): JSX.Element {
@@ -113,21 +113,21 @@ function App(): JSX.Element {
         />
 
         <Text style={styles.title}>Common functions</Text>
-        <Button title="encrypt" onPress={onPressEncrypt} />
+        <Button title="encrypt" onPress={onPressEncrypt}/>
         <Text style={styles.textValue} onPress={onPressEncryptedText}>
           Encrypted: {encrypted}
         </Text>
-        <Button title="decrypt" onPress={onPressDecrypt} />
+        <Button title="decrypt" onPress={onPressDecrypt}/>
         <Text style={styles.textValue} onPress={onPressDecryptedText}>
           Decrypted: {decrypted}
         </Text>
 
         <Text style={styles.title}>Passworder</Text>
-        <Button title="encrypt" onPress={onPressPassworderEncrypt} />
+        <Button title="encrypt" onPress={onPressPassworderEncrypt}/>
         <Text style={styles.textValue} onPress={onPressPassworderEncryptedText}>
           Encrypted: {passworderEncrypted}
         </Text>
-        <Button title="decrypt" onPress={onPressPassworderDecrypt} />
+        <Button title="decrypt" onPress={onPressPassworderDecrypt}/>
         <Text style={styles.textValue} onPress={onPressPassworderDecryptedText}>
           Decrypted: {passworderDecrypted}
         </Text>
